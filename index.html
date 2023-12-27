@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .container {
+    border: 1px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-right: 20px;
+}
+         h1{color: blue;text-align: center;}
+         h2 {
+           margin: 0;
+           overflow: hidden;
+           font-family:  'Droid Sans';
+           text-align: center;
+         }
+         .center{display: block;
+         margin-left:auto;
+         margin-right:auto;
+         width: 50%;
+      }
+      div{text-align: center;}
+       </style>
+   </head>
+   <body>
+      <div class="container">
+         <button onclick="Guess()">Capital Quiz</button>
+     </div>
+
+
+     <script> 
+     function Guess(){
+      let capital = prompt("Which Capital is seen in this picture? ");
+      if (capital == "London"){
+         window.alert("Correct!")}
+      else{window.alert("Wrong answer ):")}
+      }
+      </script>
+      <h1>Guesses.com</h1>
+      <div id="content">
+         <img src="images/preview.jpg" alt="Sign" class="center"/>
+      </div>
+      
+   </body>
+</html>
